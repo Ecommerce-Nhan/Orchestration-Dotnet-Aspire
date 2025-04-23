@@ -58,6 +58,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "..\SharedL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce", "..\Ecommerce\Ecommerce.csproj", "{D2E91BEA-CFE4-4CEC-8630-B495817958FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure", "..\ECommerce.Infrastructure\ECommerce.Infrastructure.csproj", "{FB771D7C-36AC-47E5-8826-4625EEB0C4F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,6 +122,10 @@ Global
 		{D2E91BEA-CFE4-4CEC-8630-B495817958FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2E91BEA-CFE4-4CEC-8630-B495817958FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2E91BEA-CFE4-4CEC-8630-B495817958FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB771D7C-36AC-47E5-8826-4625EEB0C4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB771D7C-36AC-47E5-8826-4625EEB0C4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB771D7C-36AC-47E5-8826-4625EEB0C4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB771D7C-36AC-47E5-8826-4625EEB0C4F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
