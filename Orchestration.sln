@@ -44,7 +44,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{66520EE1-8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Application", "..\UserService\src\UserService.Application\UserService.Application.csproj", "{FE59C90C-9B3E-0EC2-0628-14C173709531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Entities", "..\UserService\src\UserService.Domain\UserService.Entities.csproj", "{FACAE565-26D7-76AB-25BF-2B866F8FE8A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Domains", "..\UserService\src\UserService.Domain\UserService.Domains.csproj", "{FACAE565-26D7-76AB-25BF-2B866F8FE8A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Infrastructure", "..\UserService\src\UserService.Infrastructure\UserService.Infrastructure.csproj", "{B50514A2-ED77-2A13-D5F6-601316B60882}"
 EndProject
