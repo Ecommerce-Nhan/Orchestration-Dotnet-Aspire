@@ -7,15 +7,19 @@ using System.Text.Json;
 namespace Orchestration.ServiceDefaults.Authorize;
 public class PermissionAuthorizationHandler : AuthorizationHandler<PermissionRequirement>
 {
-    //private readonly IDistributedCache _redisCache;
+    private readonly IDistributedCache _redisCache;
 
-    //public PermissionAuthorizationHandler(IDistributedCache redisCache)
-    //{
-    //    _redisCache = redisCache;
-    //}
+    public PermissionAuthorizationHandler(IDistributedCache redisCache)
+    {
+        _redisCache = redisCache;
+    }
     protected override async Task HandleRequirementAsync(AuthorizationHandlerContext context, PermissionRequirement requirement)
     {
-        context.Succeed(requirement);
+        // Check claims
+
+
+
+
         //if (context.User == null)
         //{
         //    return;
