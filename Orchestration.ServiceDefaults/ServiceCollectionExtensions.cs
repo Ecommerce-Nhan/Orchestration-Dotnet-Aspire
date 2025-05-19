@@ -1,10 +1,14 @@
 ﻿using Hangfire;
 using Hangfire.PostgreSql;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Serilog.Debugging;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace Orchestration.ServiceDefaults;
 
@@ -49,6 +53,37 @@ public static class GeneralServiceExtensions
                                               })
                         );
         services.AddHangfireServer();
+
+        return services;
+    }
+
+    public static IServiceCollection AddJWTConfiguration(this IServiceCollection services, IConfiguration configuration)
+    {
+        JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(o =>
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("IxrAjDoa2FqElO7IhrSrUJELhUckePEPVpaePlS_Xaw"));
+            o.RequireHttpsMetadata = false;
+            o.SaveToken = true;
+            o.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ClockSkew = TimeSpan.Zero,
+
+                //ValidIssuer = "https://localhost:5001/",
+                //ValidAudience = "b865bfc2-9966-4309-93be-f0dcd2d7c59b",
+                IssuerSigningKey = key,
+            };
+        });
+        services.AddAuthorization();
 
         return services;
     }

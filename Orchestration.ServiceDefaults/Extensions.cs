@@ -45,6 +45,7 @@ public static class Extensions
 
         builder.Services.AddRedis(builder.Configuration);
         builder.Services.AddHangfireConfiguration(builder.Configuration);
+        builder.Services.AddJWTConfiguration(builder.Configuration);
 
         return builder;
     }
