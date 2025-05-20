@@ -2,6 +2,7 @@
 using Hangfire.PostgreSql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -81,6 +82,24 @@ public static class GeneralServiceExtensions
                 //ValidIssuer = "https://localhost:5001/",
                 //ValidAudience = "b865bfc2-9966-4309-93be-f0dcd2d7c59b",
                 IssuerSigningKey = key,
+            };
+            o.Events = new JwtBearerEvents
+            {
+                OnAuthenticationFailed = context =>
+                {
+                    if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                    {
+                        context.Response.Headers.Append("Token-Expired", "true");
+                    }
+                    return Task.CompletedTask;
+                },
+                OnChallenge = context =>
+                {
+                    context.HandleResponse();
+                    context.Response.StatusCode = 401;
+                    context.Response.ContentType = "application/json";
+                    return context.Response.WriteAsync("{\"error\":\"Unauthorized\"}");
+                }
             };
         });
         services.AddAuthorization();
