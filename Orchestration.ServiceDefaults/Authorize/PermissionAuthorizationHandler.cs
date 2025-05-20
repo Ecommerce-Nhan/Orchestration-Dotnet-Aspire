@@ -17,7 +17,7 @@ public class PermissionAuthorizationHandler : AuthorizationHandler<PermissionReq
     {
         // Check claims
 
-
+        context.Succeed(requirement);
 
 
         //if (context.User == null)
