@@ -56,7 +56,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "..\SharedLibrary\src\SharedLibrary.csproj", "{472C6DBA-E004-3609-1134-58FF96D2869D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{78C8C430-4E4D-46D4-B706-23D38B03E482}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{78C8C430-4E4D-46D4-B706-23D38B03E482}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce", "..\BlazorWASM\Ecommerce\Ecommerce.csproj", "{EAA49E00-AD84-ABCD-A4CF-B3C9201F46CF}"
 EndProject
