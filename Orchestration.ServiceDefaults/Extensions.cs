@@ -1,12 +1,14 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.ServiceDiscovery;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
+using Orchestration.ServiceDefaults;
+using Orchestration.ServiceDefaults.Authorize;
 
 namespace Microsoft.Extensions.Hosting;
 
@@ -37,6 +39,13 @@ public static class Extensions
         // {
         //     options.AllowedSchemes = ["https"];
         // });
+
+        builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
+        builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+
+        builder.Services.AddRedis(builder.Configuration);
+        builder.Services.AddHangfireConfiguration(builder.Configuration);
+        builder.Services.AddJWTConfiguration(builder.Configuration);
 
         return builder;
     }

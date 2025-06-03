@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Microservice",
+    "Projects": [
+      {
+        "Path": "Orchestration.AppHost\\Orchestration.AppHost.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "..\\BlazorWASM\\Ecommerce\\Ecommerce.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
