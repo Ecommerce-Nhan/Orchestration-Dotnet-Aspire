@@ -63,9 +63,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure", "..\BlazorWASM\ECommerce.Infrastructure\ECommerce.Infrastructure.csproj", "{E70A578B-2384-AC4E-0E38-4EF20C90C31A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{6477C5B4-8F13-45A9-94A9-22F58A085FE9}"
-	ProjectSection(SolutionItems) = preProject
-		..\ProductService\.github\workflows\deploy.yml = ..\ProductService\.github\workflows\deploy.yml
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2E84835D-B6CC-4A5F-8413-BFCCE3E9CA8A}"
 EndProject
@@ -74,6 +71,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Api.Test", "..\ProductService\tests\ProductService.Api.Test\ProductService.Api.Test.csproj", "{1D0B78EA-9A43-5A8C-C4E6-AF2E980C3CEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Application.Test", "..\ProductService\tests\ProductService.Application.Test\ProductService.Application.Test.csproj", "{0A073422-786E-0590-BB58-82C2965FBED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{23953167-0C3A-4656-87D1-90B006940374}"
+	ProjectSection(SolutionItems) = preProject
+		..\ProductService\.github\workflows\deploy.yml = ..\ProductService\.github\workflows\deploy.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -178,6 +180,7 @@ Global
 		{71DBE4FF-6B83-46BB-BF26-E0521B7E08ED} = {2E84835D-B6CC-4A5F-8413-BFCCE3E9CA8A}
 		{1D0B78EA-9A43-5A8C-C4E6-AF2E980C3CEF} = {71DBE4FF-6B83-46BB-BF26-E0521B7E08ED}
 		{0A073422-786E-0590-BB58-82C2965FBED2} = {71DBE4FF-6B83-46BB-BF26-E0521B7E08ED}
+		{23953167-0C3A-4656-87D1-90B006940374} = {6477C5B4-8F13-45A9-94A9-22F58A085FE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAD990BF-38B3-45C1-B232-B46A698EA2EC}
