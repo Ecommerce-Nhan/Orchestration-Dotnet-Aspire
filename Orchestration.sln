@@ -72,6 +72,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployments", "deployments"
 	ProjectSection(SolutionItems) = preProject
 		..\ProductService\.dockerignore = ..\ProductService\.dockerignore
 		..\ProductService\.gitignore = ..\ProductService\.gitignore
+		..\ProductService\.github\workflows\deploy.yml = ..\ProductService\.github\workflows\deploy.yml
 		..\ProductService\Dockerfile = ..\ProductService\Dockerfile
 		..\ProductService\deployments\ecs-task-definition.json = ..\ProductService\deployments\ecs-task-definition.json
 	EndProjectSection
