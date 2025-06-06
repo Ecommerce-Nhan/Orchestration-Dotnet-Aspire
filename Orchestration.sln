@@ -23,6 +23,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "container", "container", "{573534EE-9FAC-41CE-9B15-9C275854799D}"
 	ProjectSection(SolutionItems) = preProject
 		..\.env = ..\.env
+		..\..\Docker-compose-git\docker-compose = ..\..\Docker-compose-git\docker-compose
 		..\docker-compose.base.yml = ..\docker-compose.base.yml
 		..\docker-compose.monitoring.yml = ..\docker-compose.monitoring.yml
 		..\docker-compose.override.yml = ..\docker-compose.override.yml
