@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{07130283-3598-4DDE-9989-A3F9FB8B7741}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{4D2675F8-5079-407B-944F-7AEAD855068D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployments", "Deployments", "{4D2675F8-5079-407B-944F-7AEAD855068D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "container", "container", "{573534EE-9FAC-41CE-9B15-9C275854799D}"
 	ProjectSection(SolutionItems) = preProject
