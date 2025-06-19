@@ -17,8 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\APIGateway\APIGateway.csproj" />
-    <ProjectReference Include="..\..\AuthService\src\AuthService.csproj" />
     <ProjectReference Include="..\..\ProductService\src\ProductService.Api\ProductService.Api.csproj" />
     <ProjectReference Include="..\..\UserService\src\UserService.Api\UserService.Api.csproj" />
   </ItemGroup>
