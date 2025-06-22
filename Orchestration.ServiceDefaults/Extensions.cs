@@ -47,6 +47,16 @@ public static class Extensions
         builder.Services.AddHangfireConfiguration(builder.Configuration);
         builder.Services.AddJWTConfiguration(builder.Configuration);
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", policy =>
+            {
+                policy.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            });
+        });
+
         return builder;
     }
 
