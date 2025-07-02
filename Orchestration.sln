@@ -57,6 +57,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{03DC
 		..\ProductService\deployments\ecs-task-definition.json = ..\ProductService\deployments\ecs-task-definition.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{F94343E7-725F-413A-9CA2-F7C089999213}"
+	ProjectSection(SolutionItems) = preProject
+		..\UserService\buildspec.yml = ..\UserService\buildspec.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -136,6 +141,7 @@ Global
 		{EAA49E00-AD84-ABCD-A4CF-B3C9201F46CF} = {78C8C430-4E4D-46D4-B706-23D38B03E482}
 		{E70A578B-2384-AC4E-0E38-4EF20C90C31A} = {78C8C430-4E4D-46D4-B706-23D38B03E482}
 		{03DC69DC-B08F-4239-AD22-DA68B4556465} = {4D2675F8-5079-407B-944F-7AEAD855068D}
+		{F94343E7-725F-413A-9CA2-F7C089999213} = {4D2675F8-5079-407B-944F-7AEAD855068D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAD990BF-38B3-45C1-B232-B46A698EA2EC}
