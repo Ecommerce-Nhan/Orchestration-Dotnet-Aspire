@@ -62,6 +62,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{F94343E7-7
 		..\UserService\buildspec.yml = ..\UserService\buildspec.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthLambda", "AuthLambda", "{5F5A275D-E19D-461F-8A55-20CACC5ED773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "..\AuthLambda\src\AuthFunction\Auth.csproj", "{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,6 +124,10 @@ Global
 		{E70A578B-2384-AC4E-0E38-4EF20C90C31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E70A578B-2384-AC4E-0E38-4EF20C90C31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E70A578B-2384-AC4E-0E38-4EF20C90C31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +150,8 @@ Global
 		{E70A578B-2384-AC4E-0E38-4EF20C90C31A} = {78C8C430-4E4D-46D4-B706-23D38B03E482}
 		{03DC69DC-B08F-4239-AD22-DA68B4556465} = {4D2675F8-5079-407B-944F-7AEAD855068D}
 		{F94343E7-725F-413A-9CA2-F7C089999213} = {4D2675F8-5079-407B-944F-7AEAD855068D}
+		{5F5A275D-E19D-461F-8A55-20CACC5ED773} = {07130283-3598-4DDE-9989-A3F9FB8B7741}
+		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010} = {5F5A275D-E19D-461F-8A55-20CACC5ED773}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAD990BF-38B3-45C1-B232-B46A698EA2EC}
