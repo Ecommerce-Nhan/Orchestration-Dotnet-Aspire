@@ -66,6 +66,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthLambda", "AuthLambda", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "..\AuthLambda\src\AuthFunction\Auth.csproj", "{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{85842BEA-BBE1-4EE8-90D5-F06700A7C411}"
+	ProjectSection(SolutionItems) = preProject
+		..\BlazorWASM\buildspec.yml = ..\BlazorWASM\buildspec.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -152,6 +157,7 @@ Global
 		{F94343E7-725F-413A-9CA2-F7C089999213} = {4D2675F8-5079-407B-944F-7AEAD855068D}
 		{5F5A275D-E19D-461F-8A55-20CACC5ED773} = {07130283-3598-4DDE-9989-A3F9FB8B7741}
 		{84E19CBA-1AC6-0EF2-E36C-8C49F24DC010} = {5F5A275D-E19D-461F-8A55-20CACC5ED773}
+		{85842BEA-BBE1-4EE8-90D5-F06700A7C411} = {4D2675F8-5079-407B-944F-7AEAD855068D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAD990BF-38B3-45C1-B232-B46A698EA2EC}
